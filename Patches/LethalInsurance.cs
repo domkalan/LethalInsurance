@@ -260,10 +260,21 @@ namespace LethalInsurance.Patches
 
         public static int getQuotaCoverageCost()
         {
+            int daysLeft = TimeOfDay.Instance.daysUntilDeadline;
+            
             int quotaCost = TimeOfDay.Instance.profitQuota;
             double quotaCoverageCost = Math.Floor((quotaCost * 0.20f));
 
-            return Convert.ToInt32(quotaCoverageCost);
+            int qoutaCoverageIncremental = Convert.ToInt32(quotaCoverageCost);
+            int qoutaCovergaeCost = qoutaCoverageIncremental + 150;
+
+            // Charge a fee for if you are purchasing quota last minute
+            if (daysLeft <= 2)
+            {
+                qoutaCovergaeCost += 50;
+            }
+
+            return qoutaCovergaeCost;
         }
 
         public static bool chargeTerminalBalance(int balance)
