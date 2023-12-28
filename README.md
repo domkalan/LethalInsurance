@@ -18,7 +18,7 @@ A mod focused around adding insurance coverage for various events/scenarios that
 - [ ] Add base cost instead of most prices being based off % of quota.
 
 ## Installing
-This mod uses BepinEx and Harmony 2 for mod injection, they are included in the DLL file. You can find the latest build of the mod in the [GitHub releases section], then extract the mod and add it to your BepinEx plugin folder. Please be sure to include the `lethalinsurance` and `lethalinsurance.manifest` file. These are Unity NetCode for GameObjects NetObjects that are responsible for ServerRPC and ClientRPC.
+This mod uses BepinEx and Harmony 2 for mod injection, they are included in the DLL file. You can find the latest build of the mod in the [GitHub releases section](https://github.com/domkalan/LethalInsurance/releases), then extract the mod and add it to your BepinEx plugin folder. Please be sure to include the `lethalinsurance` and `lethalinsurance.manifest` file. These are Unity NetCode for GameObjects NetObjects that are responsible for ServerRPC and ClientRPC.
 
 ## Usage
 To purchase insurance, use the in game terminal and type in insurance. All coverage plans offered at the time will be displayed on the terminal. You can then type in `quota` for example to purchase quota insurance. **Please note that the insurance command is an interactive command, and will function diffrently from other in game commands. Subcommands of the insurance command will only be accessable in the insurance application.**
