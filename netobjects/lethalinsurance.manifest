@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2585007039
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 46a4bd1cc24912c1ec7d6dbcd0ab57cb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 36c4f4ecbab87baf50c43a1bf2ed53a5
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 46a4bd1cc24912c1ec7d6dbcd0ab57cb
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/LethalInsuranceNetwork.prefab
+Dependencies: []
