@@ -23,7 +23,17 @@ This mod uses BepinEx and Harmony 2 for mod injection, they are included in the 
 ## Usage
 To purchase insurance, use the in game terminal and type in insurance. All coverage plans offered at the time will be displayed on the terminal. You can then type in `quota` for example to purchase quota insurance. **Please note that the insurance command is an interactive command, and will function diffrently from other in game commands. Subcommands of the insurance command will only be accessable in the insurance application.**
 
+## Building
+It is strongly recommended that you use the prebuilt version instead of building. If you wish to continue, you must download the external dependencies listed on this readme, excluding UnityNedcodeWeaver. 
+
+After adding the dependencies, to the project you need to create a build of the mod by running `dotnet build` in the project directory. Once your build has finished, you should now have both the `LethalInsurnace.dll` and `LethalInsurance.pdb` located inside your bin folder. 
+
+Before the mod can be used in game, we must post process our dll file so that it can use Unity's NetCode system. To do this, we will use UnityNedcodeWeaver. More information on how this step works can be found on the [GitHub page for UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver).
+
+You will need a blank game object exported from Unity in the asset bundle format. This blank object should contain a `NetworkObject` script attached to it. This will be used as our root object for networking between game clients. You must do this step in Unity, as the editor will generate a random ID hash for the object that will be unique for the mod. For refrence, if you do not wish to do this step I have included the file in the repo which will be `lethalinsurance` and `lethalinsurance.manifest` located in the `netobjects/` directory. These files must be shipped with the DLL otherwise networking will not work.
+
 ## External Dependencies Used
+* [UnityNetcodeWeaver](https://github.com/EvaisaDev/UnityNetcodeWeaver)
 * [BepinEX](https://docs.bepinex.dev/index.html)
 * [Harmony 2](https://harmony.pardeike.net/)
 * [LethalAPI.GamesLib](https://github.com/dhkatz/LethalAPI.GameLibs)
