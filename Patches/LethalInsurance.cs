@@ -336,6 +336,13 @@ namespace LethalInsurance.Patches
             switch (coverage)
             {
                 case 0:
+                    if (currentCoverage.quotaCoverage)
+                    {
+                        returnClientPurchase(clientId, false, "You already have coverage for missed quota!");
+                        
+                        return;
+                    }
+                    
                     if (daysLeft < 2)
                     {
                         returnClientPurchase(clientId, false, "Quota coverage must be purchased before day 1.");
