@@ -1,9 +1,9 @@
 {
     "name": "lethalinsurance",
     "description": "Insurance coverage for various in game scenarios. Requires credits to purchase from terminal.",
-    "version_number": "1.0.3",
+    "version_number": "1.1.0",
     "dependencies": [
-        "domkalanus-lethalextendedterminal-1.0.2",
+        "domkalanus-lethalextendedterminal-1.1.0",
         "BepInEx-BepInExPack-5.4.2100"
     ],
     "website_url": "https://github.com/domkalan/LethalInsurance"

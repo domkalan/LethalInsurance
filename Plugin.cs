@@ -11,7 +11,7 @@ namespace LethalInsurance
     {
         public const string GUID = "us.domkalan.lethalinsurance";
         public const string NAME = "Lethal Insurance";
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.1.0";
 
         public static Plugin instance;
         private void Awake()
