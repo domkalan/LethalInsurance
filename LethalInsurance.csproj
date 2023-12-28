@@ -24,7 +24,7 @@
   
   <ItemGroup>
     <Reference Include="LethalTerminalExtender">
-      <HintPath>..\..\LethalTerminalExtender\LethalTerminalExtender\bin\Debug\net46\LethalTerminalExtender.dll</HintPath>
+      <HintPath>..\LethalTerminalExtender\bin\Debug\net46\LethalTerminalExtender.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
