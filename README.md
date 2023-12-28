@@ -40,7 +40,7 @@ You will need a blank game object exported from Unity in the asset bundle format
     * Can also be downloaded from [NuGet](https://www.nuget.org/packages/LethalAPI.GameLibs)
 * [Lethal TerminalExtender](https://github.com/domkalan/LethalTerminalExtender)
 
-# Credit
+## Credit
 * [tinyhoot's ShipLoot](https://github.com/tinyhoot/ShipLoot) for refrence implementation of how to count total scrap inside ship.
 
 ## New to Lethal Company Modding?
